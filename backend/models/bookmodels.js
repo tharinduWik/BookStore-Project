@@ -7,15 +7,15 @@ const bookShema = mongoose.Schema(
             type:String,
             required: true,
         },
-        Author:{
+        author:{
             type:String,
             required: true,
         },
-        PubclishYear:{
+        publishYear:{
             type:Number,
             required: true,
         },
     },
     {timestamps:true}
 )
-export const Book = mongoose.model('cat',{bookShema});
+export const Book = mongoose.model('Book',{bookShema});
